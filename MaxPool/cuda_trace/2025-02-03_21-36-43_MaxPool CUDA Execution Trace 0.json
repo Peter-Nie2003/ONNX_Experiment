@@ -1,0 +1,244 @@
+[
+  {
+    "cat": "Session",
+    "pid": 211970,
+    "tid": 211970,
+    "dur": 93,
+    "ts": 2,
+    "ph": "X",
+    "name": "model_loading_uri",
+    "args": {}
+  },
+  {
+    "cat": "Session",
+    "pid": 211970,
+    "tid": 211970,
+    "dur": 335,
+    "ts": 114,
+    "ph": "X",
+    "name": "session_initialization",
+    "args": {}
+  },
+  {
+    "cat": "Node",
+    "pid": 211970,
+    "tid": 211970,
+    "dur": 0,
+    "ts": 509,
+    "ph": "X",
+    "name": "MaxPool_0_fence_before",
+    "args": {
+      "op_name": "MaxPool"
+    }
+  },
+  {
+    "cat": "Node",
+    "pid": 211970,
+    "tid": 211970,
+    "dur": 43,
+    "ts": 514,
+    "ph": "X",
+    "name": "MaxPool_0_kernel_time",
+    "args": {
+      "thread_scheduling_stats": {
+        "main_thread": {
+          "thread_pool_name": "session-6-intra-op",
+          "thread_id": "47730974606848",
+          "block_size": [
+            1
+          ],
+          "core": 9,
+          "Distribution": 1,
+          "DistributionEnqueue": 0,
+          "Run": 2,
+          "Wait": 0,
+          "WaitRevoke": 0
+        },
+        "sub_threads": {
+          "thread::id of a non-executing thread": {
+            "num_run": 0,
+            "core": -1
+          },
+          "thread::id of a non-executing thread": {
+            "num_run": 0,
+            "core": -1
+          },
+          "thread::id of a non-executing thread": {
+            "num_run": 0,
+            "core": -1
+          },
+          "thread::id of a non-executing thread": {
+            "num_run": 0,
+            "core": -1
+          },
+          "thread::id of a non-executing thread": {
+            "num_run": 0,
+            "core": -1
+          },
+          "thread::id of a non-executing thread": {
+            "num_run": 0,
+            "core": -1
+          },
+          "thread::id of a non-executing thread": {
+            "num_run": 0,
+            "core": -1
+          },
+          "thread::id of a non-executing thread": {
+            "num_run": 0,
+            "core": -1
+          },
+          "thread::id of a non-executing thread": {
+            "num_run": 0,
+            "core": -1
+          },
+          "thread::id of a non-executing thread": {
+            "num_run": 0,
+            "core": -1
+          },
+          "thread::id of a non-executing thread": {
+            "num_run": 0,
+            "core": -1
+          },
+          "thread::id of a non-executing thread": {
+            "num_run": 0,
+            "core": -1
+          },
+          "thread::id of a non-executing thread": {
+            "num_run": 0,
+            "core": -1
+          },
+          "thread::id of a non-executing thread": {
+            "num_run": 0,
+            "core": -1
+          },
+          "thread::id of a non-executing thread": {
+            "num_run": 0,
+            "core": -1
+          },
+          "thread::id of a non-executing thread": {
+            "num_run": 0,
+            "core": -1
+          },
+          "thread::id of a non-executing thread": {
+            "num_run": 0,
+            "core": -1
+          },
+          "thread::id of a non-executing thread": {
+            "num_run": 0,
+            "core": -1
+          },
+          "thread::id of a non-executing thread": {
+            "num_run": 0,
+            "core": -1
+          },
+          "thread::id of a non-executing thread": {
+            "num_run": 0,
+            "core": -1
+          },
+          "thread::id of a non-executing thread": {
+            "num_run": 0,
+            "core": -1
+          },
+          "thread::id of a non-executing thread": {
+            "num_run": 0,
+            "core": -1
+          },
+          "thread::id of a non-executing thread": {
+            "num_run": 0,
+            "core": -1
+          },
+          "thread::id of a non-executing thread": {
+            "num_run": 0,
+            "core": -1
+          },
+          "thread::id of a non-executing thread": {
+            "num_run": 0,
+            "core": -1
+          },
+          "thread::id of a non-executing thread": {
+            "num_run": 0,
+            "core": -1
+          },
+          "thread::id of a non-executing thread": {
+            "num_run": 0,
+            "core": -1
+          },
+          "thread::id of a non-executing thread": {
+            "num_run": 0,
+            "core": -1
+          },
+          "47731334293248": {
+            "num_run": 0,
+            "core": -1
+          },
+          "thread::id of a non-executing thread": {
+            "num_run": 0,
+            "core": -1
+          },
+          "thread::id of a non-executing thread": {
+            "num_run": 0,
+            "core": -1
+          }
+        }
+      },
+      "output_type_shape": [
+        {
+          "float": [
+            1,
+            3,
+            16,
+            16
+          ]
+        }
+      ],
+      "output_size": "3072",
+      "parameter_size": "0",
+      "activation_size": "12288",
+      "node_index": "0",
+      "input_type_shape": [
+        {
+          "float": [
+            1,
+            3,
+            32,
+            32
+          ]
+        }
+      ],
+      "provider": "CPUExecutionProvider",
+      "op_name": "MaxPool"
+    }
+  },
+  {
+    "cat": "Node",
+    "pid": 211970,
+    "tid": 211970,
+    "dur": 0,
+    "ts": 562,
+    "ph": "X",
+    "name": "MaxPool_0_fence_after",
+    "args": {
+      "op_name": "MaxPool"
+    }
+  },
+  {
+    "cat": "Session",
+    "pid": 211970,
+    "tid": 211970,
+    "dur": 69,
+    "ts": 502,
+    "ph": "X",
+    "name": "SequentialExecutor::Execute",
+    "args": {}
+  },
+  {
+    "cat": "Session",
+    "pid": 211970,
+    "tid": 211970,
+    "dur": 84,
+    "ts": 490,
+    "ph": "X",
+    "name": "model_run",
+    "args": {}
+  }
+]

@@ -2,6 +2,7 @@ import onnx
 import numpy as np
 import onnx.helper as helper
 from onnx import TensorProto
+import os
 
 # Define input, weights, and bias tensors
 input_tensor = helper.make_tensor_value_info("X", TensorProto.FLOAT, [1, 3, 32, 32])  # Batch=1, Channels=3, H=32, W=32
@@ -32,5 +33,7 @@ graph = helper.make_graph(
 )
 
 # Create the model
-model = helper.make_model(graph, producer_name="onnx-conv-example",opset_imports=[helper.make_opsetid("", 21)])
-onnx.save(model, "Conv/conv.onnx")
+model = helper.make_model(graph, producer_name="onnx-conv-example")
+script_dir = os.path.dirname(os.path.abspath(__file__))
+onnx_file_path = os.path.join(script_dir, "Conv.onnx")
+onnx.save(model, onnx_file_path)

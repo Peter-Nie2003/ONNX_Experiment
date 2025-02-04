@@ -1,0 +1,23 @@
+{
+    "model": "Softmax.onnx",
+    "device": "CPU",
+    "provider_name": "CUDA",
+    "providers": [
+        "CUDAExecutionProvider",
+        "CPUExecutionProvider"
+    ],
+    "time_collected": "2025-02-03 21:40:11",
+    "input_sizes": {
+        "X": [
+            1,
+            10
+        ]
+    },
+    "elapsed_onnx": [
+        0.00020742416381835938
+    ],
+    "elapsed_onnx_profiling": [
+        0.00011873245239257812
+    ],
+    "gpu_info": "Tesla V100-SXM2-32GB, 32768 MiB"
+}

@@ -1,0 +1,21 @@
+{
+    "model": "Softmax.onnx",
+    "device": "CPU",
+    "provider_name": "CPU",
+    "providers": [
+        "CPUExecutionProvider"
+    ],
+    "time_collected": "2025-02-03 21:40:19",
+    "input_sizes": {
+        "X": [
+            1,
+            10
+        ]
+    },
+    "elapsed_onnx": [
+        0.0001552104949951172
+    ],
+    "elapsed_onnx_profiling": [
+        0.00011038780212402344
+    ]
+}

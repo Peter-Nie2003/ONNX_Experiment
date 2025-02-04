@@ -1,32 +1,24 @@
 import onnxruntime as ort
 import numpy as np
-import time
+import os
 
-def run_model(device="CPU"):
-    
-    if device == "CUDA":
-        providers = ["CUDAExecutionProvider"]
-    else:
-        providers = ["CPUExecutionProvider"]
+# Get the directory of the script file
+script_dir = os.path.dirname(os.path.abspath(__file__))
+onxx_file_path = os.path.join(script_dir, "Conv.onnx")
 
-    session = ort.InferenceSession("Conv/conv.onnx", providers=providers)
+# Load the ONNX model
+session = ort.InferenceSession(onxx_file_path)
 
-    input_data = np.random.rand(1, 3, 32, 32).astype(np.float32)
-    inputs = {"X": input_data}
+# Get model input name and shape
+input_name = session.get_inputs()[0].name
+input_shape = session.get_inputs()[0].shape
 
-    start_time = time.time()
-    outputs = session.run(None, inputs)
-    end_time = time.time()
+# Generate a random input tensor matching the model's expected shape
+input_data = np.random.randn(*input_shape).astype(np.float32)
 
-    latency_ms = (end_time - start_time) * 1000
+# Run inference
+outputs = session.run(None, {input_name: input_data})
 
-    print(f"Running on {device}")
-    print("Input:")
-    print(input_data)
-    print("Conv Output:")
-    print(outputs[0])
-    print(f"\nInference Latency: {latency_ms:.2f} ms")
-
-run_model(device="CPU")
-
-run_model(device="CUDA")
+# Print output
+print("Model output shape:", outputs[0].shape)
+print("Model output:", outputs[0])
