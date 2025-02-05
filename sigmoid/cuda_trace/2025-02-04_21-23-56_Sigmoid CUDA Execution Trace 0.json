@@ -1,0 +1,238 @@
+[
+  {
+    "cat": "Session",
+    "pid": 162938,
+    "tid": 162938,
+    "dur": 78,
+    "ts": 2,
+    "ph": "X",
+    "name": "model_loading_uri",
+    "args": {}
+  },
+  {
+    "cat": "Session",
+    "pid": 162938,
+    "tid": 162938,
+    "dur": 332,
+    "ts": 97,
+    "ph": "X",
+    "name": "session_initialization",
+    "args": {}
+  },
+  {
+    "cat": "Node",
+    "pid": 162938,
+    "tid": 162938,
+    "dur": 0,
+    "ts": 485,
+    "ph": "X",
+    "name": "Sigmoid_0_fence_before",
+    "args": {
+      "op_name": "Sigmoid"
+    }
+  },
+  {
+    "cat": "Node",
+    "pid": 162938,
+    "tid": 162938,
+    "dur": 36,
+    "ts": 491,
+    "ph": "X",
+    "name": "Sigmoid_0_kernel_time",
+    "args": {
+      "thread_scheduling_stats": {
+        "main_thread": {
+          "thread_pool_name": "session-6-intra-op",
+          "thread_id": "47933858547200",
+          "block_size": [],
+          "core": -1,
+          "Distribution": 0,
+          "DistributionEnqueue": 0,
+          "Run": 0,
+          "Wait": 0,
+          "WaitRevoke": 0
+        },
+        "sub_threads": {
+          "47934262359808": {
+            "num_run": 0,
+            "core": -1
+          },
+          "thread::id of a non-executing thread": {
+            "num_run": 0,
+            "core": -1
+          },
+          "thread::id of a non-executing thread": {
+            "num_run": 0,
+            "core": -1
+          },
+          "thread::id of a non-executing thread": {
+            "num_run": 0,
+            "core": -1
+          },
+          "thread::id of a non-executing thread": {
+            "num_run": 0,
+            "core": -1
+          },
+          "thread::id of a non-executing thread": {
+            "num_run": 0,
+            "core": -1
+          },
+          "thread::id of a non-executing thread": {
+            "num_run": 0,
+            "core": -1
+          },
+          "thread::id of a non-executing thread": {
+            "num_run": 0,
+            "core": -1
+          },
+          "thread::id of a non-executing thread": {
+            "num_run": 0,
+            "core": -1
+          },
+          "thread::id of a non-executing thread": {
+            "num_run": 0,
+            "core": -1
+          },
+          "thread::id of a non-executing thread": {
+            "num_run": 0,
+            "core": -1
+          },
+          "thread::id of a non-executing thread": {
+            "num_run": 0,
+            "core": -1
+          },
+          "thread::id of a non-executing thread": {
+            "num_run": 0,
+            "core": -1
+          },
+          "thread::id of a non-executing thread": {
+            "num_run": 0,
+            "core": -1
+          },
+          "thread::id of a non-executing thread": {
+            "num_run": 0,
+            "core": -1
+          },
+          "thread::id of a non-executing thread": {
+            "num_run": 0,
+            "core": -1
+          },
+          "thread::id of a non-executing thread": {
+            "num_run": 0,
+            "core": -1
+          },
+          "thread::id of a non-executing thread": {
+            "num_run": 0,
+            "core": -1
+          },
+          "thread::id of a non-executing thread": {
+            "num_run": 0,
+            "core": -1
+          },
+          "thread::id of a non-executing thread": {
+            "num_run": 0,
+            "core": -1
+          },
+          "thread::id of a non-executing thread": {
+            "num_run": 0,
+            "core": -1
+          },
+          "thread::id of a non-executing thread": {
+            "num_run": 0,
+            "core": -1
+          },
+          "thread::id of a non-executing thread": {
+            "num_run": 0,
+            "core": -1
+          },
+          "thread::id of a non-executing thread": {
+            "num_run": 0,
+            "core": -1
+          },
+          "thread::id of a non-executing thread": {
+            "num_run": 0,
+            "core": -1
+          },
+          "thread::id of a non-executing thread": {
+            "num_run": 0,
+            "core": -1
+          },
+          "thread::id of a non-executing thread": {
+            "num_run": 0,
+            "core": -1
+          },
+          "thread::id of a non-executing thread": {
+            "num_run": 0,
+            "core": -1
+          },
+          "thread::id of a non-executing thread": {
+            "num_run": 0,
+            "core": -1
+          },
+          "thread::id of a non-executing thread": {
+            "num_run": 0,
+            "core": -1
+          },
+          "thread::id of a non-executing thread": {
+            "num_run": 0,
+            "core": -1
+          }
+        }
+      },
+      "output_type_shape": [
+        {
+          "float": [
+            1,
+            10
+          ]
+        }
+      ],
+      "output_size": "40",
+      "parameter_size": "0",
+      "activation_size": "40",
+      "node_index": "0",
+      "input_type_shape": [
+        {
+          "float": [
+            1,
+            10
+          ]
+        }
+      ],
+      "provider": "CPUExecutionProvider",
+      "op_name": "Sigmoid"
+    }
+  },
+  {
+    "cat": "Node",
+    "pid": 162938,
+    "tid": 162938,
+    "dur": 0,
+    "ts": 532,
+    "ph": "X",
+    "name": "Sigmoid_0_fence_after",
+    "args": {
+      "op_name": "Sigmoid"
+    }
+  },
+  {
+    "cat": "Session",
+    "pid": 162938,
+    "tid": 162938,
+    "dur": 62,
+    "ts": 478,
+    "ph": "X",
+    "name": "SequentialExecutor::Execute",
+    "args": {}
+  },
+  {
+    "cat": "Session",
+    "pid": 162938,
+    "tid": 162938,
+    "dur": 77,
+    "ts": 466,
+    "ph": "X",
+    "name": "model_run",
+    "args": {}
+  }
+]

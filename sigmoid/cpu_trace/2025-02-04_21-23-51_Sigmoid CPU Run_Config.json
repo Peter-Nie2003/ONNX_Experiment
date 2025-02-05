@@ -1,0 +1,21 @@
+{
+    "model": "Sigmoid.onnx",
+    "device": "CPU",
+    "provider_name": "CPU",
+    "providers": [
+        "CPUExecutionProvider"
+    ],
+    "time_collected": "2025-02-04 21:23:50",
+    "input_sizes": {
+        "X": [
+            1,
+            10
+        ]
+    },
+    "elapsed_onnx": [
+        0.00019431114196777344
+    ],
+    "elapsed_onnx_profiling": [
+        0.00010013580322265625
+    ]
+}
